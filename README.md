@@ -1,7 +1,7 @@
-# Clone & Install
+## Clone & Install
 
-# Compile SASS
+## Compile SASS
 
 ```sh
 npm start
-`
+
