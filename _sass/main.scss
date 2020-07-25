@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$orange: #e84545;
+$dark: #2b2e4a;
+$white: #fff;
+$black-1: #2b2e4a;
+$grey-1: #F1F1F1;
+$green: #5AAC44;
+// Update the sans-serif font family
+$family-sans-serif: 'Inter', sans-serif;
+
+// 3. Set the derived variables
+$primary: $dark;
+$primary-invert: $white;
+$link: $primary;
+
+// Form Section
+$input-background-color: $grey-1;
+$input-focus-border-color: $white;
+$input-focus-box-shadow-color: none;
+$input-border-color: $white;
+$input-hover-border-color: none;
+$input-shadow: none;
+
+
+// Navbar
+$navbar-height: 4.5rem;
+// $navbar-background-color: $dark;
+
+.navbar-item, .navbar-link{
+    font-weight: 600;
+    color: $dark !important;
+}
+
+.separator-in-nav{
+  padding-right: 1rem;  
+}
+
+
+// Card
+.card{
+    .date{
+        font-size: .875rem;
+        margin-bottom: .5rem !important;
+    }
+}
+
+
+// Chat
+.name-chat{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0rem !important;
+}
+
+.message-chat{
+    margin-bottom: .5rem;
+}
+
+
+// .Video Container
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+   
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+// Typography
+p, a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.forget-pass:hover{
+    color: $primary;
+}
+
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
+@import "helper.scss";
+
+
+.bg-image{
+    background-image: url("../img/people.jpg");
+    // height: 100vh;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-color{
+    background: $dark;
+}
+
+.bg-color2{
+    background: $grey-1;
+}
+
+.max-vh{
+    height: 100vh;
+}
+
+.cover-image{
+    width: 100%;
+    padding: 4rem;
+}
+
+.title-login{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $black-1;
+    margin-bottom: 2rem;
+}
